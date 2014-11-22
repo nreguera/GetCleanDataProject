@@ -5,14 +5,14 @@
 # setwd("C:/Project/")
 
 # Import the data from the files to R variables
-activity_labels=read.table("./data/activity_labels.txt")
-features=read.table("./data/features.txt",stringsAsFactors=FALSE)
-subject_test=read.table("./data/subject_test.txt")
-subject_train=read.table("./data/subject_train.txt")
-X_test=read.table("./data/X_test.txt")
-Y_test=read.table("./data/Y_test.txt")
-X_train=read.table("./data/X_train.txt")
-Y_train=read.table("./data/Y_train.txt")
+activity_labels=read.table("./activity_labels.txt")
+features=read.table("./features.txt",stringsAsFactors=FALSE)
+subject_test=read.table("./subject_test.txt")
+subject_train=read.table("./subject_train.txt")
+X_test=read.table("./X_test.txt")
+Y_test=read.table("./Y_test.txt")
+X_train=read.table("./X_train.txt")
+Y_train=read.table("./Y_train.txt")
 
 # Merge train and test sets
 activities=rbind(Y_test,Y_train)
